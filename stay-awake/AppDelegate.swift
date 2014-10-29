@@ -13,7 +13,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     var stayAwake = false
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        statusItem.title = "Stay Awake"
+        statusItem.title = "Sleepy"
         
         statusMenu.delegate = self
         
