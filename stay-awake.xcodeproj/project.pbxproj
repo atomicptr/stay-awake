@@ -10,18 +10,7 @@
 		F5D2B4B71A01796900D846A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2B4B61A01796900D846A6 /* AppDelegate.swift */; };
 		F5D2B4B91A01796900D846A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D2B4B81A01796900D846A6 /* Images.xcassets */; };
 		F5D2B4BC1A01796900D846A6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5D2B4BA1A01796900D846A6 /* MainMenu.xib */; };
-		F5D2B4C81A01796900D846A6 /* stay_awakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D2B4C71A01796900D846A6 /* stay_awakeTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F5D2B4C21A01796900D846A6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F5D2B4A91A01796900D846A6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F5D2B4B01A01796900D846A6;
-			remoteInfo = "stay-awake";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F5D2B4B11A01796900D846A6 /* stay-awake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stay-awake.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,20 +18,10 @@
 		F5D2B4B61A01796900D846A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5D2B4B81A01796900D846A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F5D2B4BB1A01796900D846A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F5D2B4C11A01796900D846A6 /* stay-awakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stay-awakeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F5D2B4C61A01796900D846A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5D2B4C71A01796900D846A6 /* stay_awakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stay_awakeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F5D2B4AE1A01796900D846A6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F5D2B4BE1A01796900D846A6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,7 +35,6 @@
 			isa = PBXGroup;
 			children = (
 				F5D2B4B31A01796900D846A6 /* stay-awake */,
-				F5D2B4C41A01796900D846A6 /* stay-awakeTests */,
 				F5D2B4B21A01796900D846A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				F5D2B4B11A01796900D846A6 /* stay-awake.app */,
-				F5D2B4C11A01796900D846A6 /* stay-awakeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,23 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				F5D2B4B51A01796900D846A6 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F5D2B4C41A01796900D846A6 /* stay-awakeTests */ = {
-			isa = PBXGroup;
-			children = (
-				F5D2B4C71A01796900D846A6 /* stay_awakeTests.swift */,
-				F5D2B4C51A01796900D846A6 /* Supporting Files */,
-			);
-			path = "stay-awakeTests";
-			sourceTree = "<group>";
-		};
-		F5D2B4C51A01796900D846A6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F5D2B4C61A01796900D846A6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -126,24 +86,6 @@
 			productReference = F5D2B4B11A01796900D846A6 /* stay-awake.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F5D2B4C01A01796900D846A6 /* stay-awakeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F5D2B4CE1A01796900D846A6 /* Build configuration list for PBXNativeTarget "stay-awakeTests" */;
-			buildPhases = (
-				F5D2B4BD1A01796900D846A6 /* Sources */,
-				F5D2B4BE1A01796900D846A6 /* Frameworks */,
-				F5D2B4BF1A01796900D846A6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F5D2B4C31A01796900D846A6 /* PBXTargetDependency */,
-			);
-			name = "stay-awakeTests";
-			productName = "stay-awakeTests";
-			productReference = F5D2B4C11A01796900D846A6 /* stay-awakeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -155,10 +97,6 @@
 				TargetAttributes = {
 					F5D2B4B01A01796900D846A6 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					F5D2B4C01A01796900D846A6 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = F5D2B4B01A01796900D846A6;
 					};
 				};
 			};
@@ -176,7 +114,6 @@
 			projectRoot = "";
 			targets = (
 				F5D2B4B01A01796900D846A6 /* stay-awake */,
-				F5D2B4C01A01796900D846A6 /* stay-awakeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -191,13 +128,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5D2B4BF1A01796900D846A6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,23 +139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5D2B4BD1A01796900D846A6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F5D2B4C81A01796900D846A6 /* stay_awakeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F5D2B4C31A01796900D846A6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F5D2B4B01A01796900D846A6 /* stay-awake */;
-			targetProxy = F5D2B4C21A01796900D846A6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F5D2B4BA1A01796900D846A6 /* MainMenu.xib */ = {
@@ -338,42 +252,6 @@
 			};
 			name = Release;
 		};
-		F5D2B4CF1A01796900D846A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "stay-awakeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stay-awake.app/Contents/MacOS/stay-awake";
-			};
-			name = Debug;
-		};
-		F5D2B4D01A01796900D846A6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "stay-awakeTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stay-awake.app/Contents/MacOS/stay-awake";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -393,14 +271,7 @@
 				F5D2B4CD1A01796900D846A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		F5D2B4CE1A01796900D846A6 /* Build configuration list for PBXNativeTarget "stay-awakeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F5D2B4CF1A01796900D846A6 /* Debug */,
-				F5D2B4D01A01796900D846A6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

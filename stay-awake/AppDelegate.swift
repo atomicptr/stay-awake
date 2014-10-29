@@ -11,17 +11,21 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
-
-
+    @IBOutlet weak var statusMenu:NSMenu!
+    
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
     }
 
+    @IBAction func aboutMenuItemClicked(sender: AnyObject) {
+    }
+
+    @IBAction func quitMenuItemClicked(sender: AnyObject) {
+    }
 
 }
 
