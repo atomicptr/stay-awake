@@ -49,7 +49,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         
     }
 
-    @IBAction func aboutMenuItemClicked(sender: AnyObject) {}
+    @IBAction func aboutMenuItemClicked(sender: AnyObject) {
+        let url = NSURL(string: "https://github.com/kasoki/stay-awake#stay-awake")
+        
+        NSWorkspace.sharedWorkspace().openURL(url!)
+    }
 
     @IBAction func quitMenuItemClicked(sender: AnyObject) {
         disableInsomnia()
