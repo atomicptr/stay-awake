@@ -8,12 +8,17 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     let LEFT_MOUSE_BUTTON = 1
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    let iconEyeOpen = NSImage(named: "EyeOpen")
+    let iconEyeClosed = NSImage(named: "EyeClosed")
     
     var task = NSTask()
     var stayAwake = false
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        statusItem.title = "Sleepy"
+        iconEyeOpen?.setTemplate(true)
+        iconEyeClosed?.setTemplate(true)
+        
+        statusItem.image = iconEyeClosed
         
         statusMenu.delegate = self
         
@@ -38,10 +43,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func menuItemClicked() {
         if(!stayAwake) {
             enableInsomnia()
-            statusItem.title = "Awake"
         } else {
             disableInsomnia()
-            statusItem.title = "Sleepy"
         }
         
     }
@@ -56,6 +59,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     func enableInsomnia() {
         stayAwake = true
         
+        statusItem.image = iconEyeOpen
+        
         task = NSTask()
         
         task.launchPath = "/usr/bin/caffeinate"
@@ -69,6 +74,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     
     func disableInsomnia() {
         stayAwake = false
+        
+        statusItem.image = iconEyeClosed
         
         task.interrupt()
     }
