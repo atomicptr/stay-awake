@@ -77,7 +77,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
         
         statusItem.image = iconEyeClosed
         
-        task.interrupt()
+        if task.running {
+            task.interrupt()
+        }
     }
 
 }
